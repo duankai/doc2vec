@@ -24,7 +24,7 @@ except:
 
 SQL = 'SELECT info_id,content FROM ods_hl_info_ext' 
 print SQL
-conn = connect(host='10.129.64.165', port=10000,database='jkgj_log',auth_mechanism='GSSAPI',kerberos_service_name='hive')
+conn = connect(host='', port=10000,database='jkgj_log',auth_mechanism='GSSAPI',kerberos_service_name='hive')
 cursor = conn.cursor()
 
 cursor.execute(SQL)
